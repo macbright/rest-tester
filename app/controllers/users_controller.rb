@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
     
+    def index
+        @name = "I am the Index action!"
+    end
+
     def new
         @name = "a user is being created"
     end
@@ -7,11 +11,14 @@ class UsersController < ApplicationController
     def show
         @name = "a user profile is show!"
     end
+
+    def create
+        @name = "a user is being created"
+    end
     
     def edit
         @name = "a user profile is editing!"
-    end
-      
+    end 
     
     def update
         @name = "user is updated"
@@ -21,7 +28,4 @@ class UsersController < ApplicationController
         @name = "user is removed"
     end
 
-    def index
-        @name = "I am the Index action!"
-    end
 end
