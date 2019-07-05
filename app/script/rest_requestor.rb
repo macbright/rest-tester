@@ -1,6 +1,11 @@
 require 'rest-client'
 
 puts "Enter any URL"
-url = gets.chomp()
+# url = gets.chomp()
+url = "http://localhost:3000/users"
+url1 = "http://localhost:3000/users/new"
 
-puts RestClient.get(url)
+
+# puts RestClient.get(url)
+
+RestClient.post(url1, "")
